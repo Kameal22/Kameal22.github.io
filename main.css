@@ -1,0 +1,283 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    font-family: 'Lato', sans-serif;
+    min-height: 100%;
+}
+
+#mainSection{
+    height: 80vh;
+    background-image: url(carPhoto.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 1vh;
+    box-shadow: 0px 6px 4px -2px rgba(0,0,0,0.50);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#carSelection{
+    width: 35%;
+    height: 90%;
+    margin-left: 4em;
+    background: rgba( 125, 153, 181, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+#carSelection #selectingOptions{
+    margin-top: 6vh;
+}
+
+#selectingOptions select, label{
+    display: block;
+}
+
+#selectingOptions label{
+    margin-bottom: 1vh;
+}
+
+#selectingOptions select{
+    width: 10em;
+    height: 90%;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.534);
+}
+
+#selectingOptions #firstForms{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+#firstForms .formOne, .formTwo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 7vh;
+}
+
+#selectingOptions #scdForms{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 10vh;
+}
+
+#scdForms .formThree, .formFour{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 7vh;
+}
+
+#selectingOptions #thirdForms{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 10vh;
+}
+
+#thirdForms .formFive, .formSix{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 7vh;
+}
+
+#carSelection #carSelectHeading{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: center;
+    font-size: 1.3em;
+    padding-top: 4vh;
+    color: rgba(32, 32, 32, 0.863);
+}
+
+#selectingOptions #sendBtn{
+    width: 40%; 
+    margin: 6vh auto;
+    text-align: center;
+}
+
+#selectingOptions #sendBtn #sendForm{
+    background-color: rgba(255, 255, 255, 0.753);
+    border: 1px solid white;
+    color: rgba(32, 32, 32, 0.863);
+    padding: 10px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    border-radius: 5px;
+}
+
+#selectingOptions #sendBtn #sendForm:hover{
+    background-color: rgba(255, 255, 255, 0.308);
+}
+
+#mainInfo{
+    width: 50%;
+    height: 50%;
+    margin-right: 5%;
+    color: #06539c;
+    letter-spacing: 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+#scdSection{
+    margin-top: 2vh;
+    height: 90vh;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #7d99b54b;
+}
+
+#scdSection div{
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+#scdSection #firstCarRan{
+    border-bottom: 1px solid grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#firstCarRan .carPhoto{
+    height: 60%;
+}
+
+#firstCarRan .carDescription{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 40%;
+}
+
+#scdSection #scdCarRan{
+    border-bottom: 1px solid grey;
+    border-right: none; 
+}
+
+#scdCarRan{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#scdCarRan .carPhoto{
+    height: 60%;
+}
+
+#scdCarRan .carDescription{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 40%;
+}
+
+#thirdCarRan{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#thirdCarRan .carPhoto{
+    height: 60%;
+}
+
+#thirdCarRan .carDescription{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 40%;
+}
+
+#scdSection #fourthCarRan{
+    border-right: none;
+}
+
+#fourthCarRan{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#fourthCarRan .carPhoto{
+    height: 60%;
+}
+
+#fourthCarRan .carDescription{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 40%;
+}
+
+/* REGISTRATION */
+
+#mainReg{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mainReg #registration{
+    width: 40%;
+    height: 85%;
+    background-color: #7d99b54b;
+}
+
+#registration .heading{
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1px;
+    color: #06539c;
+}
+
+footer{
+    width: 100%;
+    height: 12vh;   
+    margin-top: 2vh;
+    border-top: 1px solid grey;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #7d99b54b;
+}
+
+footer > div{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+footer h4, p::before{
+    content: "\007C";
+    padding-right: 1vh;
+    color: #588ec5;
+}
